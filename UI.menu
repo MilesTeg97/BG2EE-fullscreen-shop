@@ -9403,24 +9403,24 @@ menu
 	ignoreEsc
 	label
 	{
-		area 0 0 864 598
+		area 118 -2 796 492
 		mosaic GUISTBSC
 	}
 	label
 	{
-		area 48 16 768 44
+		area -34 4 146 58
 		text lua "checkContainerText('BUY_SELL_TITLE','CONTAINER_TITLE')"
 		text style "title"
 	}
 	label
 	{
-		area 266 85 330 27
+		area -34 62 148 62
 		text lua "Infinity_FetchString(storeScreen:GetStoreName())"
 		text style "label"
 	}
 	label
 	{
-		area 717 116 108 30
+		area 975 68 108 40
 		enabled "not storeScreen:IsContainer()"
 		text lua "game:GetPartyGold()"
 		text style "gold"
@@ -9428,7 +9428,7 @@ menu
 	}
 	label
 	{
-		area 94 499 146 23
+		area -22 254 128 38
 		enabled "not storeScreen:IsContainer()"
 		text "COST_LABEL"
 		text style "label"
@@ -9436,7 +9436,7 @@ menu
 	}
 	label
 	{
-		area 319 499 108 23
+		area -14 292 128 52
 		enabled "not storeScreen:IsContainer()"
 		text lua "storeScreen:GetStoreCost()"
 		text style "normal"
@@ -9444,7 +9444,7 @@ menu
 	}
 	label
 	{
-		area 533 499 146 23
+		area 958 246 125 46
 		enabled "not storeScreen:IsContainer()"
 		text "PRICE_LABEL"
 		text style "label"
@@ -9452,7 +9452,7 @@ menu
 	}
 	label
 	{
-		area 717 499 108 23
+		area 958 292 125 52
 		enabled "not storeScreen:IsContainer()"
 		text lua "storeScreen:GetGroupCost()"
 		text style "normal"
@@ -9461,7 +9461,7 @@ menu
 	
 	label
 	{
-		area 26 116 349 30
+		area 6 124 108 42
 		text lua "checkContainerText('STORE_LABEL',Infinity_FetchString(storeScreen:GetStoreName()))"
 		text style "label"
 		align left center
@@ -9504,7 +9504,7 @@ menu
 				rectangle opacity 150
 			}
 		}
-		area 26 146 406 344
+		area 124 10 406 746
 		hidehighlight
 		rowheight	60
 		table		"store.storeItems"
@@ -9539,7 +9539,7 @@ menu
 	
 	label
 	{
-		area 467 116 250 30
+		area 936 14 147 54
 		text  lua "Infinity_GetSelectedCharacterName()"
 		text style "label"
 		align left center
@@ -9583,7 +9583,7 @@ menu
 				rectangle opacity 150
 			}
 		}
-		area 462 146 368 344
+		area 546 10 368 746
 		enabled "not storeScreen:IsCloseBagButtonClickable()"
 		hidehighlight
 		rowheight	60
@@ -9694,7 +9694,7 @@ menu
 
 	button
 	{
-		area 118 532 201 43
+		area -26 344 140 64
 		bam GUIOSTUM
 		text lua "checkContainerText('BUY_BUTTON', 'TO_BACKPACK_BUTTON')"
 		text style "button"
@@ -9706,7 +9706,7 @@ menu
 	}
 	button
 	{
-		area 604 532 201 43
+		area 931 344 152 64
 		bam GUIOSTUM
 		text lua "checkContainerText('SELL_BUTTON','TO_CONTAINER_BUTTON')"
 		text style "button"
@@ -9743,7 +9743,7 @@ menu
 	}
 	button
 	{
-		area 14 496 68 90
+		area 982 516 68 90
 		encumbrance
 	}
 
@@ -10463,17 +10463,17 @@ menu
 	
 	label
 	{
-		area 0 0 864 112
+		area 130 -320 798 428
 		mosaic GUISTBBB
 	}
 	label
 	{
-		area 22 18 80 70
+		area 22 -134 80 70
 		bam lua "store.icon"
 	}
 	button
 	{
-		area 638 60 204 44
+		area 946 -54 154 60
 		bam GUIOSTUM
 		text "DONE_BUTTON"
 		text style "button"
@@ -10485,7 +10485,7 @@ menu
 	button
 	{
 		name 'BUTTON_storechooser_0'
-		area 110 18 62 64
+		area 68 -54 62 64
 		enabled "storeScreen:GetPanelButtonEnabled(0)"
 		bam GUISTBBC
 		highlightgroup storePanelButtonHighlightGroup
@@ -10499,7 +10499,7 @@ menu
 	button
 	{
 		name 'BUTTON_storechooser_1'
-		area 182 18 62 64
+		area 2 -54 62 64
 		enabled "storeScreen:GetPanelButtonEnabled(1)"
 		bam GUISTBBC
 		highlightgroup storePanelButtonHighlightGroup
@@ -10513,7 +10513,7 @@ menu
 	button
 	{
 		name 'BUTTON_storechooser_2'
-		area 254 18 62 64
+		area 68 18 62 64
 		enabled "storeScreen:GetPanelButtonEnabled(2)"
 		bam GUISTBBC
 		highlightgroup storePanelButtonHighlightGroup
@@ -10527,7 +10527,7 @@ menu
 	button
 	{
 		name 'BUTTON_storechooser_3'
-		area 326 18 62 64
+		area 2 18 62 64
 		enabled "storeScreen:GetPanelButtonEnabled(3)"
 		bam GUISTBBC
 		highlightgroup storePanelButtonHighlightGroup
@@ -12309,7 +12309,7 @@ menu
 	text
 	{
 		name "worldNPCDialog"
-		area 84 22 749 38
+		area 84 22 749 20
 		text lua "worldNPCDialogText"
 		text style "gamelog"
 		scrollbar	'GUISCRC'
